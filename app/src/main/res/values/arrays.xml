@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="number_of_guesses_list">
+
+        <item>2</item>
+        <item>4</item>
+        <item>6</item>
+
+    </string-array>
+
+
+    <string-array name="type_of_animals">
+
+
+        <item>Aquatic Animals</item>
+        <item>Coastal and Northern Polar Areas</item>
+        <item>Forest Animals</item>
+        <item>Open Landscapes and Human Habitats</item>
+
+    </string-array>
+
+
+    <string-array name="type_of_animals_values">
+
+
+        <item>Aquatic_Animals</item>
+        <item>Coastal_And_Northern_Polar_Areas</item>
+        <item>Forest_Animals</item>
+        <item>Open_Landscapes_And_Human_Habitats</item>
+
+    </string-array>
+
+
+    <string-array name="colors">
+
+
+        <item>White</item>
+        <item>Black</item>
+        <item>Green</item>
+        <item>Red</item>
+        <item>Blue</item>
+        <item>Yellow</item>
+
+
+
+
+    </string-array>
+
+
+
+    <string-array name="fonts">
+        <item>Waltograph</item>
+        <item>Chunkfive</item>
+        <item>FontleroyBrown</item>
+        <item>Wonderbar Demo</item>
+
+    </string-array>
+
+
+    <string-array name="fonts_values">
+
+        <item>waltograph42.ttf</item>
+        <item>Chunkfive.otf</item>
+        <item>FontleroyBrown.ttf</item>
+        <item>Wonderbar Demo.otf</item>
+
+    </string-array>
+
+
+</resources>
