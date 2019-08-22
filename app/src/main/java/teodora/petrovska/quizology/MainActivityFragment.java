@@ -123,7 +123,6 @@ public class MainActivityFragment extends Fragment {
                 if (numberOfRightAnswers == NUMBER_OF_ANIMALS_INCLUDED_IN_QUIZ) {
 
                     new AlertDialog.Builder(getContext())
-                            .setTitle(R.string.results_string_value)
                             .setMessage(getString(R.string.results_string_value, numberOfAllGuesses,
                                     1000 / (double) numberOfAllGuesses))
                             .setPositiveButton(R.string.reset_animal_quiz, new DialogInterface.OnClickListener() {

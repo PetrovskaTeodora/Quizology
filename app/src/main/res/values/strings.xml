@@ -28,5 +28,6 @@
     <string name="toast_message">One type of animals must be selected. The default value is Aquatic Animals.</string>
 
     <string name="change_message">New changes are applied.</string>
+    <string name="title_activity_first_page">FirstPage</string>
 
 </resources>

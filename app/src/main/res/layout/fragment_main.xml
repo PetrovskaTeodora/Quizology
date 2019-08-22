@@ -25,13 +25,17 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
             android:layout_margin="5dp"
-            android:lines="2"/>
+            android:lines="1"
+            android:paddingRight="1dp"
+            android:paddingLeft="1dp"/>
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
             android:layout_margin="5dp"
-            android:lines="2"/>
+            android:lines="1"
+            android:paddingRight="1dp"
+            android:paddingLeft="1dp"/>
     </LinearLayout>
 
     <LinearLayout
@@ -44,13 +48,17 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
             android:layout_margin="5dp"
-            android:lines="2"/>
+            android:lines="1"
+            android:paddingRight="1dp"
+            android:paddingLeft="1dp"/>
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
             android:layout_margin="5dp"
-            android:lines="2"/>
+            android:lines="1"
+            android:paddingRight="1dp"
+            android:paddingLeft="1dp"/>
 
     </LinearLayout>
 
@@ -64,13 +72,18 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
             android:layout_margin="5dp"
-            android:lines="2"/>
+            android:lines="1"
+            android:paddingRight="1dp"
+            android:paddingLeft="1dp"/>
+
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="0.5"
             android:layout_margin="5dp"
-            android:lines="2"/>
+            android:layout_weight="0.5"
+            android:lines="1"
+            android:paddingRight="1dp"
+            android:paddingLeft="1dp"/>
     </LinearLayout>
 
     <TextView
