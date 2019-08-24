@@ -8,6 +8,7 @@ import android.content.SharedPreferences;
 import android.content.res.AssetManager;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
+import android.media.MediaPlayer;
 import android.os.Handler;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
@@ -55,6 +56,7 @@ public class MainActivityFragment extends Fragment {
     private ImageView imgAnimal;
     private LinearLayout[] rowsOfGuessButtonsInQuizology;
     private TextView txtAnswer;
+    private MediaPlayer animalPlayer;
 
 
 
@@ -115,7 +117,8 @@ public class MainActivityFragment extends Fragment {
 
             if (guessValue.equals(answerValue)) {
                 ++numberOfRightAnswers;
-
+                String nameForSound= answerValue.toLowerCase().replace(" ","_");
+                   sayAnimalName(nameForSound);
                 txtAnswer.setText(answerValue + "! " + "RIGHT");
 
                 disableQuizGuessButton();
@@ -522,5 +525,11 @@ public class MainActivityFragment extends Fragment {
 
 
         }
+    }
+
+    private void sayAnimalName(String name){
+        animalPlayer = MediaPlayer.create(getActivity(), getResources().getIdentifier(name, "raw", getActivity().getPackageName()));
+
+        animalPlayer.start();
     }
 }
