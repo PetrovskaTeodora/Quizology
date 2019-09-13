@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
                     editor.apply();
 
                     Toast.makeText(MainActivity.this,
-                            R.string.toast_message, Toast.LENGTH_SHORT).show();
+                            R.string.toast_message, Toast.LENGTH_LONG).show();
 
                 }
 

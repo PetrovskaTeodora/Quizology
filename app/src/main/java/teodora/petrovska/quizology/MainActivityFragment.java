@@ -42,7 +42,7 @@ public class MainActivityFragment extends Fragment {
     private List<String> allAnimalsNamesList;
     private List<String> animalsNamesQuizList;
 
-    // Set (Interface) cannot have duplicate values
+
     private Set<String> animalTypesInQuiz;
     private String correctAnimalAnswer;
     private int numberOfAllGuesses;
@@ -119,7 +119,8 @@ public class MainActivityFragment extends Fragment {
                 ++numberOfRightAnswers;
                 String nameForSound= answerValue.toLowerCase().replace(" ","_");
                    sayAnimalName(nameForSound);
-                txtAnswer.setText(answerValue + "! " + "RIGHT");
+
+                txtAnswer.setText(answerValue + "! " + "BRAVO!");
 
                 disableQuizGuessButton();
 
@@ -138,9 +139,7 @@ public class MainActivityFragment extends Fragment {
                             })
                             .setCancelable(false)
                             .show();
-                    // user must click on reset the quiz
-                    // animalQuizResults.setCancelable(false);
-//                    animalQuizResults.show(getFragmentManager(), "AnimalQuizResults");
+
 
                 }
                 // when user choose wrong answer
@@ -230,7 +229,7 @@ public class MainActivityFragment extends Fragment {
         int xBottomRight = quizologyLinearLayout.getLeft() + quizologyLinearLayout.getRight();
         int yBottomRight = quizologyLinearLayout.getTop() + quizologyLinearLayout.getBottom();
 
-        // Here is max value for radius
+        // max value for radius
         int radius = Math.max(quizologyLinearLayout.getWidth(), quizologyLinearLayout.getHeight());
 
         Animator animator;
@@ -266,6 +265,7 @@ public class MainActivityFragment extends Fragment {
         } else {
             animator = ViewAnimationUtils.createCircularReveal(quizologyLinearLayout,
                     xTopLeft, yTopLeft, radius, 0);
+
         }
 
         animator.setDuration(700);
@@ -297,8 +297,6 @@ public class MainActivityFragment extends Fragment {
 
         Collections.shuffle(allAnimalsNamesList);
 
-        // following 3 lines allAnimalsNamesList ma sy correctAnimalAnswer ka index correctAnimalNameIndex
-        // ma save krati hain. Then other thing
 
         int correctAnimalNameIndex = allAnimalsNamesList.indexOf(correctAnimalAnswer);
         String correctAnimalName = allAnimalsNamesList.remove(correctAnimalNameIndex);
@@ -306,7 +304,7 @@ public class MainActivityFragment extends Fragment {
 
         for (int row = 0; row < numberOfAnimalsGuessRows; row++) {
 
-            // Enabling btns
+
 
             for (int column = 0; column < rowsOfGuessButtonsInQuizology[row].getChildCount();
                  column++) {
@@ -320,9 +318,7 @@ public class MainActivityFragment extends Fragment {
                 btnGuess.setText(getTheExactAnimalName(animalImageName));
             }
         }
-        //secureRandomNumber generates random nmbrs AND numberOfAnimalsGuessRows
-        // shows number of animal guess rows
-        //Here substituting one of the guess options with correct answer
+
         int row = secureRandomNumber.nextInt(numberOfAnimalsGuessRows);
         int column = secureRandomNumber.nextInt(2);
         LinearLayout randomRow = rowsOfGuessButtonsInQuizology[row];
